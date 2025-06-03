@@ -23,7 +23,7 @@ This is a web-based implementation of the classic **Stone-Paper-Scissors** game 
 - JavaScript (Vanilla)
 
 ## Demo
-[🔗 Live Demo (optional link)](https://your-live-demo-link.com)
+[🔗 Live Demo :(https://pathan-faizann.github.io/Stone-Paper-Scissors-Game/))
 
 ---
 
