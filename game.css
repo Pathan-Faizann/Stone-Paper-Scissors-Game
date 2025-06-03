@@ -78,11 +78,7 @@ body{
     height: 100px;
     width: 100px;
   }
-  .choices {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+ 
 
   .choices > img {
     width: 80px;
