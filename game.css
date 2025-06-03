@@ -81,8 +81,11 @@ body{
   .choices{
     flex-direction:row;
   }
- 
-
+  .Uchoice{
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+}
   .choices > img {
     width: 80px;
     height: 80px;
