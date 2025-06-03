@@ -66,5 +66,12 @@ body{
   width: 180px;
   border: 2px solid black;
 }
+@media screen and (max-width:480px) {
+  .scores>div{
+    padding: 0%;
+  }
+  
+}
+
 
 
