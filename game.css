@@ -71,6 +71,13 @@ body{
     padding: 0%;
     font-size:18px;
   }
+    .userSide,.CompSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+  }
   
 }
 
