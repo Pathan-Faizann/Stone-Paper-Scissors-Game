@@ -78,6 +78,9 @@ body{
     height: 100px;
     width: 100px;
   }
+  .choices{
+    flex-direction:row;
+  }
  
 
   .choices > img {
