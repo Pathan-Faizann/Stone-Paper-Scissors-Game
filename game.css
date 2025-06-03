@@ -44,6 +44,7 @@ body{
 .choices{
   height: 120px;
   display: flex;
+  margin-top:80px;
   justify-content: center;
   width: 50%;
   gap: 25px;
