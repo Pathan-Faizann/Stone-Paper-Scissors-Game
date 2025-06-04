@@ -12,7 +12,7 @@ body{
 }
 .container>h1{
   color: white;
-  background-color: rgb(241, 178, 101);
+  background-color:rgb(255, 162, 48);
   width:fit-content;
   padding: 10px;
   border-radius: 19px;
@@ -24,7 +24,7 @@ body{
   height: 200px;
 }
 .scores>div{
-  background-color: rgb(241, 178, 101);
+  background-color: rgb(255, 162, 48);
   color: white;
   height: 50px;
   width: 170px;
@@ -76,19 +76,20 @@ body{
 }
 .submit{
   font-size: 32px;
-  background-color: rgb(241, 178, 101);
+  background-color: rgb(255, 162, 48);
   border: 1px solid black;
   color: white;
   height: 70px;
-  width: 110px;
-  padding: 12px;
+  width: 120px;
+  padding: 10px;
   border-radius: 15px;
   font-weight: 600;
-  transition: scale 0.5s ease-out;
+  transition: scale 0.4s ease-out;
 
 }
 .submit:hover{
   scale: 1.2;
+  background-color: rgb(252, 181, 95) ;
 }
 @media screen and (max-width:480px) {
   .scores>div{
