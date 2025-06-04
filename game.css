@@ -89,7 +89,7 @@ body{
 }
 .submit:hover{
   scale: 1.2;
-  background-color: rgb(252, 181, 95) ;
+  background-color: rgb(255, 141, 2) ;
 }
 @media screen and (max-width:480px) {
   .scores>div{
