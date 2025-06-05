@@ -1,11 +1,17 @@
 let userside = document.querySelector(".userSide");
 let choices = document.querySelectorAll(".choices img");
 let play = document.querySelector(".submit");
-let randomMoves = ['stone.jpg','paper.jpeg','kechi.jpeg'];
+let randomMoves = ['./stone.jpg','./paper.jpeg','./kechi.jpeg'];
 let compSide = document.querySelector(".CompSide");
 let userChoice ="";
 let compMove ="";
-let userMoveMove ="";
+let UScore =0;
+let CScore=0;
+let userScore = document.querySelector(".userScore");
+let CompScore = document.querySelector(".CompScore");
+let Upoint =document.querySelector(".uScore")
+let Cpoint =document.querySelector(".cScore")
+
 
 choices.forEach((choice)=>{
   choice.addEventListener("click",()=>{
@@ -47,10 +53,22 @@ play.addEventListener("click",()=>{
     
     if(userMove===compMove){
       alert("Tie Move")
-
     }
-    
+    else if(userMove==="./stone.jpg" && compMove==="./kechi.jpeg"||userMove==="./paper.jpeg" && compMove==="./stone.jpg"||userMove==="./kechi.jpeg" && compMove==="./paper.jpeg"){
+      UScore++;
+      Upoint.innerText=UScore;
+      console.log("User Jeeta");
 
-  },1200)
+      // let winnerBoard = document.createElement("div")
+      // let winnerText = document.createElement(".h2")
+      // winnerBoard.appendChild(winnerText);
+      // winnerBoard.classList.add("winnerBoard")
+    }
+    else{
+      CScore++;
+      Cpoint.innerText=CScore;
+    }
+
+  },1000)
 })
 

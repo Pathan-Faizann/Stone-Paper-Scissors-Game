@@ -91,6 +91,11 @@ body{
   scale: 1.2;
   background-color: rgb(255, 141, 2) ;
 }
+.winnerBoard{
+  height: 500px;
+  width: 500px;
+  background:url();
+}
 @media screen and (max-width:480px) {
   .scores>div{
     padding: 0%;
