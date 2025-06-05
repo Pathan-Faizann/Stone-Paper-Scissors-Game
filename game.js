@@ -65,14 +65,25 @@ play.addEventListener("click",()=>{
       CScore++;
       Cpoint.innerText=CScore;
     }
+   
     if(UScore===3){
       let winnerBoard = document.createElement("div")
       let winnerText = document.createElement("h2")
+      let reset = document.createElement("button")
+      reset.classList.add("reset");
+      reset.innerHTML="Replay";
+      reset.addEventListener("click",()=>{
+        location.reload();
+      })
       winnerBoard.appendChild(winnerText);
+      winnerBoard.appendChild(reset);
       winnerBoard.classList.add("winnerBoard");
       winnerText.innerText="You Won!"
       document.body.appendChild(winnerBoard);
 
+    }
+    else if(CScore===3){
+      location.reload();
     }
 
   },1000)
