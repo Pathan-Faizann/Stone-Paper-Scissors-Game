@@ -119,6 +119,15 @@ body{
   .scores > div {
     width: 120px;
   }
+  .submit:hover{
+    scale: 1;
+  }
+  .submit{
+    padding: 5;
+    font-size: 28px;
+    height: 50px;
+    width: 100px;
+  }
   
 }
 
