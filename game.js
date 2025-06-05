@@ -59,14 +59,20 @@ play.addEventListener("click",()=>{
       Upoint.innerText=UScore;
       console.log("User Jeeta");
 
-      // let winnerBoard = document.createElement("div")
-      // let winnerText = document.createElement(".h2")
-      // winnerBoard.appendChild(winnerText);
-      // winnerBoard.classList.add("winnerBoard")
+      
     }
     else{
       CScore++;
       Cpoint.innerText=CScore;
+    }
+    if(UScore===3){
+      let winnerBoard = document.createElement("div")
+      let winnerText = document.createElement("h2")
+      winnerBoard.appendChild(winnerText);
+      winnerBoard.classList.add("winnerBoard");
+      winnerText.innerText="You Won!"
+      document.body.appendChild(winnerBoard);
+
     }
 
   },1000)

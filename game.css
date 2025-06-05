@@ -91,10 +91,27 @@ body{
   scale: 1.2;
   background-color: rgb(255, 141, 2) ;
 }
+/* body{
+  display: flex;
+} */
 .winnerBoard{
   height: 500px;
-  width: 500px;
-  background:url();
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 12px 0 black;
+
+}
+.winnerBoard>h2{
+  font-size: 76px;
+  text-align: center;
+
 }
 @media screen and (max-width:480px) {
   .scores>div{
