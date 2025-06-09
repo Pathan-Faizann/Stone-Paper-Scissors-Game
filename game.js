@@ -83,7 +83,19 @@ play.addEventListener("click",()=>{
 
     }
     else if(CScore===3){
-      location.reload();
+      let winnerBoard = document.createElement("div")
+      let winnerText = document.createElement("h2")
+      let reset = document.createElement("button")
+      reset.classList.add("reset");
+      reset.innerHTML="Replay";
+      reset.addEventListener("click",()=>{
+        location.reload();
+      })
+      winnerBoard.appendChild(winnerText);
+      winnerBoard.appendChild(reset);
+      winnerBoard.classList.add("winnerBoard");
+      winnerText.innerText="You Lose!"
+      document.body.appendChild(winnerBoard);
     }
 
   },1000)
