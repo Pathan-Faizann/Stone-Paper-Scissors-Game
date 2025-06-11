@@ -94,6 +94,7 @@ play.addEventListener("click",()=>{
       winnerBoard.appendChild(winnerText);
       winnerBoard.appendChild(reset);
       winnerBoard.classList.add("winnerBoard");
+      winnerBoard.classList.add("winnerBoard2");
       winnerText.innerText="You Lose!"
       document.body.appendChild(winnerBoard);
     }
