@@ -180,6 +180,9 @@ body{
     height: 50px;
     width: 100px;
   }
+  .winnerBoard>h2{
+    font-size: 28px;
+  }
   
 }
 
