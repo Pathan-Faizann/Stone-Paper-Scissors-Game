@@ -146,7 +146,7 @@ body{
     font-size:18px;
     height: 80px;
     width: 120px;
-    margin-bottom: 10%;
+    margin-bottom: 14%;
 
   }
     .userSide,.CompSide{
@@ -157,7 +157,7 @@ body{
     width: 130px;
   }
   .moves{
-    margin-bottom: 12%;
+    margin-bottom: 10%;
   }
   .choices{
     flex-direction:row;
@@ -172,11 +172,9 @@ body{
     height: 80px;
   }
   .container>h1{
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
- 
-  
   .submit:hover{
     scale: 1;
   }
@@ -184,6 +182,12 @@ body{
     padding: 3;
     font-size: 22px;
     width: 100px;
+  }
+  .U,.C{
+    font-size: 18px;
+  }
+  .uScore,.cScore{
+    font-size: 20px;
   }
   .winnerBoard>h2{
     font-size: 28px;
