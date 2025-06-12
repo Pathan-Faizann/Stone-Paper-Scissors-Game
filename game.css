@@ -25,17 +25,19 @@ body{
 
 }
 .C,.U{
-  font-size: 20px;
+  font-size: 24px;
+}
+.uScore,.cScore{
+  font-size: 28px;
 }
 .scores>div{
   background-color: rgb(255, 162, 48);
   color: white;
-  height: 50px;
+  height: 90px;
   width: 170px;
   padding: 20px;
-  text-align: center;
-  justify-content: center;
   align-items: center;
+  text-align: center;
   border-radius: 19px;
   font-weight: 600;
   
@@ -74,6 +76,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 180px;
+  outline: 10px solid transparent;
   width: 180px;
   border: 2px solid black;
 }
@@ -131,6 +134,12 @@ body{
   width: 136px;
   background-color: rgb(241, 219, 19);
 }
+.thiswon{
+  outline: 10px solid green;
+}
+.thislose{
+  outline: 10px solid red;
+}
 @media screen and (max-width:480px) {
   .scores>div{
     padding: 0%;
@@ -178,6 +187,12 @@ body{
   }
   .winnerBoard>h2{
     font-size: 28px;
+  }
+  .thiswon{
+    outline: 7px solid green;
+  }
+  .thislose{
+    outline: 7px solid red;
   }
   
 }

@@ -9,17 +9,18 @@ let UScore =0;
 let CScore=0;
 let userScore = document.querySelector(".userScore");
 let CompScore = document.querySelector(".CompScore");
-let Upoint =document.querySelector(".uScore")
-let Cpoint =document.querySelector(".cScore")
+let Upoint = document.querySelector(".uScore")
+let Cpoint = document.querySelector(".cScore")
 
 
 choices.forEach((choice)=>{
   choice.addEventListener("click",()=>{
   let src = choice.getAttribute("src");
-      // console.log("Image source:", src); // Debug log
-
-    userside.innerHTML = ''; 
-// userside.innerHTML = '<img src="stone.jpeg" class="Uchoice">';
+  userside.classList.remove("thiswon");
+  compSide.classList.remove("thiswon")
+  compSide.classList.remove("thislose")
+  userside.classList.remove("thislose")
+  userside.innerHTML = ''; 
   userChoice = document.createElement("img");
   userChoice.setAttribute("src",src)
   userChoice.classList.add("Uchoice");
@@ -43,11 +44,7 @@ play.addEventListener("click",()=>{
   compChoice.classList.add("Uchoice");
   compSide.appendChild(compChoice);
   userMove = userChoice.getAttribute("src")
-  console.log(userMove);
   compMove =compChoice.getAttribute("src")
-
-  console.log(userMove,compMove)
-
   }
   setTimeout(()=>{
     
@@ -57,13 +54,14 @@ play.addEventListener("click",()=>{
     else if(userMove==="./stone.jpg" && compMove==="./kechi.jpeg"||userMove==="./paper.jpeg" && compMove==="./stone.jpg"||userMove==="./kechi.jpeg" && compMove==="./paper.jpeg"){
       UScore++;
       Upoint.innerText=UScore;
-      console.log("User Jeeta");
-
-      
+      userside.classList.add("thiswon")
+      compSide.classList.add("thislose")
     }
     else{
       CScore++;
       Cpoint.innerText=CScore;
+      compSide.classList.add("thiswon")
+      userside.classList.add("thislose")
     }
    
     if(UScore===3){
@@ -99,6 +97,6 @@ play.addEventListener("click",()=>{
       document.body.appendChild(winnerBoard);
     }
 
-  },1000)
+  },800)
 })
 
